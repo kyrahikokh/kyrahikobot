@@ -23,5 +23,12 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+    if (message.content === 'almost done?') {
+    	message.reply('Yeaah.. thats what Jim always says. Come back in a few hours and ask again.');
+  	}
+});
+
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
