@@ -29,6 +29,13 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+    if (message.content === 'character suggestion') {
+    	message.reply('Please keep in mind that we let Bit-Donators have the chance to suggest a character for the poll.');
+  	}
+});
+
+
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
