@@ -59,5 +59,17 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+    if (message.content === 'hey, kyrahiko.') {
+    	message.reply('henlo o/');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'how are you?') {
+    	message.reply('fine, hbu?');
+  	}
+});
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
