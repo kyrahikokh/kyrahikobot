@@ -47,6 +47,11 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+    if (message.content === 'who is renelephant?') {
+    	message.reply('His true name is Ravren and is Jims target in PUBG.');
+  	}
+});
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
