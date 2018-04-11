@@ -35,6 +35,17 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+    if (message.content === 'hello') {
+    	message.reply('henlo o/');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'someone around?') {
+    	message.reply('nein :)');
+  	}
+});
 
 
 // THIS  MUST  BE  THIS  WAY
